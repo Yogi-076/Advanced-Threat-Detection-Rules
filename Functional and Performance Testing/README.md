@@ -61,7 +61,6 @@ This repository focuses on **functional, performance, and security testing** for
 | **Weak Session Management** | Open to session hijacking | ❌ Vulnerable |
 | **Parameter Tampering** | Modify cart price | ❌ Vulnerable |
 
-📌 **[Full Security Report: `Performance_Testing.md`](./7.%20Functional%20and%20Performance%20Testing/Performance_Testing.md)**  
 
 ---
 
@@ -83,28 +82,14 @@ Performance testing was conducted using **K6 Load Testing Framework**.
 | 300       | 1350ms               | 24.5%         | ❌ Unstable  |
 | 400       | 2600ms               | 35%           | ❌ Crashed  |
 
-📌 **[Full Performance Report: `Performance_Testing.md`](./7.%20Functional%20and%20Performance%20Testing/Performance_Testing.md)**  
+
 
 ---
 
-## 🛠 3. Installation & Usage
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/yourusername/Threat-Detection-Rules.git
-cd Threat-Detection-Rules
+## 🛠 3. Tests
 ```
 
-### 2️⃣ Run Performance Tests (K6)
-Install **K6**:
-```bash
-npm install -g k6
-```
-Run the test:
-```bash
-k6 run 7.Functional\ and\ Performance\ Testing/Performance_Testing_Script.js
-```
-
-### 3️⃣ Run Security Tests (SQLi, XSS)
+### [1] Run Security Tests (SQLi, XSS)
 #### SQL Injection Testing (SQLmap)
 ```bash
 sqlmap -u "http://testphp.vulnweb.com/login.php" --dbs
