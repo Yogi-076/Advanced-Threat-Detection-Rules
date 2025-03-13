@@ -81,7 +81,16 @@ sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --os-shell
 
 ---
 
-## 🔧 4. Security & Performance Fixes (To-Do)
+## 📊 5. Output Results
+![Image](https://github.com/user-attachments/assets/a447f3ef-c048-4734-b719-081e44b4eaac)
+
+![Image](https://github.com/user-attachments/assets/f369aac4-eec2-44e9-a161-b7ea1bf31416)
+
+![Image](https://github.com/user-attachments/assets/211ca92d-7dac-4f74-829e-041ab01fdeaa)
+
+---
+
+## 🔧 6. Security & Performance Fixes (To-Do)
 ✅ **Security Fixes**
 1. **Fix SQL Injection** – Implement parameterized queries and input validation.
 2. **Prevent XSS Attacks** – Escape & sanitize user inputs.
@@ -97,12 +106,12 @@ sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --os-shell
 
 ---
 
-## 📃 5. License
+## 📃 7. License
 This project is licensed under the **MIT License**.
 
 ---
 
-## 📞 6. Contact
+## 📞 8. Contact
 - **GitHub Issues:** [Open an Issue](https://github.com/yourusername/Threat-Detection-Rules/issues)
 - **Email:** security@yourdomain.com
 
