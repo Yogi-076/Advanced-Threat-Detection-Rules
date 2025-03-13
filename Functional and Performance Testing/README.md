@@ -5,37 +5,6 @@ This repository focuses on **functional, performance, and security testing** for
 
 ---
 
-## 📂 Project Structure
-```
-📦 Threat-Detection-Rules/
-├── 1. Assignments/
-├── 2. Ideation Phase/
-├── 3. Requirement Analysis/
-│   ├── Customer_Journey_Map.md
-│   ├── Data_Flow_Diagram.md
-│   ├── Solution_Requirement.md
-│   ├── Technology_Stack.md
-├── 4. Project Design Phase/
-│   ├── Problem_Solution_Fit.md
-│   ├── Proposed_Solution.md
-│   ├── Solution_Architecture.md
-├── 5. Project Planning Phase/
-│   ├── Project_Planning_Template.md
-├── 6. Project Executable Files/
-│   ├── Project_Files/
-│   ├── Dataset/
-│   ├── Output_Screenshots/
-├── 7. Functional and Performance Testing/
-│   ├── Performance_Testing.md
-│   ├── Performance_Testing_Report.pdf
-│   ├── Performance_Testing_Script.js
-├── 8. Documentation and Demo/
-│   ├── Final_Report.pdf
-│   ├── Video_Demo_Link.md
-```
-
----
-
 ## 🔎 1. Functional & Security Testing
 ### 🔹 Tested Pages
 1. `/login.php` → User authentication page
@@ -61,7 +30,6 @@ This repository focuses on **functional, performance, and security testing** for
 | **Weak Session Management** | Open to session hijacking | ❌ Vulnerable |
 | **Parameter Tampering** | Modify cart price | ❌ Vulnerable |
 
-
 ---
 
 ## ⚡ 2. Performance Testing
@@ -82,8 +50,6 @@ Performance testing was conducted using **K6 Load Testing Framework**.
 | 300       | 1350ms               | 24.5%         | ❌ Unstable  |
 | 400       | 2600ms               | 35%           | ❌ Crashed  |
 
-
-
 ---
 
 ## 🛠 3. Tests
@@ -92,9 +58,8 @@ Performance testing was conducted using **K6 Load Testing Framework**.
 #### SQL Injection Testing (SQLmap)
 ```
 
-
 ```bash
-sqlmap -u "http://testphp.vulnweb.com/login.php" --dbs
+sqlmap -u "http://testphp.vulnweb.com/login.php" --dbs --batch --risk=3 --level=5
 ```
 #### XSS Testing (Burp Suite)
 1. Open **Burp Suite**.
@@ -128,11 +93,4 @@ This project is licensed under the **MIT License**.
 
 ---
 
-## 📞 6. Contact
-- **GitHub Issues:** [Open an Issue](https://github.com/yourusername/Threat-Detection-Rules/issues)
-- **Email:** security@yourdomain.com
-
----
-
 🚀 **Contribute to Secure Web Applications!** 🔥
-
