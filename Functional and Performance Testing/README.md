@@ -102,7 +102,6 @@ sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --os-shell
 2. **Enable Caching & Compression** – Use Gzip & CDN for faster response times.
 3. **Optimize Server Load Handling** – Implement load balancing.
 
-📌 **[Security Recommendations](./7.%20Functional%20and%20Performance%20Testing/Performance_Testing.md)**  
 
 ---
 
@@ -110,12 +109,3 @@ sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --os-shell
 This project is licensed under the **MIT License**.
 
 ---
-
-## 📞 8. Contact
-- **GitHub Issues:** [Open an Issue](https://github.com/yourusername/Threat-Detection-Rules/issues)
-- **Email:** security@yourdomain.com
-
----
-
-🚀 **Contribute to Secure Web Applications!** 🔥
-
