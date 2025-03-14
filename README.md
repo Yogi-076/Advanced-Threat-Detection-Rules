@@ -19,7 +19,7 @@ This project focuses on advanced techniques for creating rules to detect securit
 
 ## Vulnerability Scanning and Assessment
 - Importance of vulnerability scanning
-- Popular vulnerability scanning tools (e.g., Nessus, OpenVAS, Qualys)
+- Popular vulnerability scanning tools (e.g. Zaproxy, Nessus, OpenVAS, Qualys)
 - Mapping vulnerabilities to detection rules
 - Automating vulnerability assessments
 
