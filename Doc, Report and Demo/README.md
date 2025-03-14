@@ -4,6 +4,7 @@
 This repository provides a demonstration of performing a vulnerability scan using [OWASP ZAP](https://www.zaproxy.org/). The demo video showcases the step-by-step process of scanning a web application for security vulnerabilities.
 
 ## 🎥 Demo Video
+[![OWASP ZAP Vulnerability Scan Demo](https://img.youtube.com/vi/GCAkkJEGIro/0.jpg)](https://youtu.be/GCAkkJEGIro?si=SGgLEAlCjhbIYE0l)
 [▶ Watch the demo video here](https://youtu.be/GCAkkJEGIro?si=SGgLEAlCjhbIYE0l)
 
 ## 🛠 Tools Used
@@ -34,5 +35,4 @@ This demonstration is intended for educational purposes only. Use OWASP ZAP resp
 
 ---
 *🔍 Happy scanning!*
-
 
